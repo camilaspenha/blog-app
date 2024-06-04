@@ -1,20 +1,14 @@
-/*--------------------------------------------------------------
-# Blog Details Section
---------------------------------------------------------------*/
 .blog-details {
   padding-bottom: 30px;
 }
-
 .blog-details .article {
   padding: 30px;
   box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);
 }
-
 .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
 }
-
 .blog-details .title {
   color: var(--heading-color);
   font-size: 28px;
@@ -22,17 +16,14 @@
   padding: 0;
   margin: 30px 0;
 }
-
 .blog-details .content {
   margin-top: 20px;
 }
-
 .blog-details .content h3 {
   font-size: 22px;
   margin-top: 30px;
   font-weight: bold;
 }
-
 .blog-details .content blockquote {
   overflow: hidden;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
@@ -41,7 +32,6 @@
   text-align: center;
   margin: 20px 0;
 }
-
 .blog-details .content blockquote p {
   color: var(--default-color);
   line-height: 1.6;
@@ -50,7 +40,6 @@
   font-weight: 500;
   font-size: 22px;
 }
-
 .blog-details .content blockquote:after {
   content: "";
   position: absolute;
@@ -62,12 +51,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .blog-details .meta-top {
   margin-top: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
-
 .blog-details .meta-top ul {
   display: flex;
   flex-wrap: wrap;
@@ -76,97 +63,79 @@
   padding: 0;
   margin: 0;
 }
-
 .blog-details .meta-top ul li+li {
   padding-left: 20px;
 }
-
 .blog-details .meta-top i {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
-
 .blog-details .meta-top a {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-size: 14px;
   display: inline-block;
   line-height: 1;
 }
-
 .blog-details .meta-bottom {
   padding-top: 10px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
-
 .blog-details .meta-bottom i {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   display: inline;
 }
-
 .blog-details .meta-bottom a {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   transition: 0.3s;
 }
-
 .blog-details .meta-bottom a:hover {
   color: var(--accent-color);
 }
-
 .blog-details .meta-bottom .cats {
   list-style: none;
   display: inline;
   padding: 0 20px 0 0;
   font-size: 14px;
 }
-
 .blog-details .meta-bottom .cats li {
   display: inline-block;
 }
-
 .blog-details .meta-bottom .tags {
   list-style: none;
   display: inline;
   padding: 0;
   font-size: 14px;
 }
-
 .blog-details .meta-bottom .tags li {
   display: inline-block;
 }
-
 .blog-details .meta-bottom .tags li+li::before {
   padding-right: 6px;
   color: var(--default-color);
   content: ",";
 }
-
 .blog-details .meta-bottom .share {
   font-size: 16px;
 }
-
 .blog-details .meta-bottom .share i {
   padding-left: 5px;
 }
-
 /*--------------------------------------------------------------
 # Blog Author Section
 --------------------------------------------------------------*/
 .blog-author {
   padding: 10px 0 40px 0;
 }
-
 .blog-author .author-container {
   padding: 20px;
   box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);
 }
-
 .blog-author img {
   max-width: 120px;
   margin-right: 20px;
 }
-
 .blog-author h4 {
   font-weight: 600;
   font-size: 20px;
@@ -174,16 +143,13 @@
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
-
 .blog-author .social-links {
   margin: 0 10px 10px 0;
 }
-
 .blog-author .social-links a {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   margin-right: 5px;
 }
-
 .blog-author p {
   font-style: italic;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -197,7 +163,6 @@
   margin: 60px 0 30px 0;
   box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);
 }
-
 .widget-title {
   color: var(--heading-color);
   font-size: 20px;
@@ -205,22 +170,18 @@
   padding: 0;
   margin: 0 0 20px 0;
 }
-
 .widget-item {
   margin-bottom: 40px;
 }
-
 .widget-item:last-child {
   margin-bottom: 0;
 }
-
 .search-widget form {
   background: var(--background-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
   padding: 3px 10px;
   position: relative;
 }
-
 .search-widget form input[type=text] {
   border: 0;
   padding: 4px;
@@ -229,11 +190,9 @@
   background-color: var(--background-color);
   color: var(--default-color);
 }
-
 .search-widget form input[type=text]:focus {
   outline: none;
 }
-
 .search-widget form button {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -249,94 +208,75 @@
   border-radius: 0 4px 4px 0;
   line-height: 0;
 }
-
 .search-widget form button i {
   line-height: 0;
 }
-
 .search-widget form button:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
 .categories-widget ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .categories-widget ul li {
   padding-bottom: 10px;
 }
-
 .categories-widget ul li:last-child {
   padding-bottom: 0;
 }
-
 .categories-widget ul a {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
 }
-
 .categories-widget ul a:hover {
   color: var(--accent-color);
 }
-
 .categories-widget ul a span {
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
-
 .recent-posts-widget .post-item {
   display: flex;
   margin-bottom: 15px;
 }
-
 .recent-posts-widget .post-item:last-child {
   margin-bottom: 0;
 }
-
 .recent-posts-widget .post-item img {
   width: 80px;
   margin-right: 15px;
 }
-
 .recent-posts-widget .post-item h4 {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 .recent-posts-widget .post-item h4 a {
   color: var(--default-color);
   transition: 0.3s;
 }
-
 .recent-posts-widget .post-item h4 a:hover {
   color: var(--accent-color);
 }
-
 .recent-posts-widget .post-item time {
   display: block;
   font-style: italic;
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
-
 .tags-widget {
   margin-bottom: -10px;
 }
-
 .tags-widget ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .tags-widget ul li {
   display: inline-block;
 }
-
 .tags-widget ul a {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
@@ -346,13 +286,11 @@
   display: inline-block;
   transition: 0.3s;
 }
-
 .tags-widget ul a:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 1px solid var(--accent-color);
 }
-
 .tags-widget ul a span {
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
