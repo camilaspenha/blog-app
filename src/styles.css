@@ -1,1 +1,320 @@
 /* You can add global styles to this file, and also import other style files */
+/* Fonts */
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roboto", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors */
+:root {
+  /* Background Color - This color is applied to the background of the entire website as well as individual sections. */
+  --background-color: #ffffff;
+
+  /* Default Color - This is the default color used for the majority of the text content. */
+  --default-color: #364d59;
+
+  /* Heading Color - This color is used for titles, headings and secondary elements. */
+  --heading-color: #52565e;
+
+  /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
+  --accent-color: #feb900;
+
+  /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
+  --contrast-color: #ffffff;
+}
+
+/* Nav Menu Colors */
+:root {
+  /* Nav Color - This is the default color of the main navmenu links. */
+  --nav-color: rgba(255, 255, 255, 0.55);
+
+  /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
+  --nav-hover-color: #ffffff;
+
+  /* Nav Dropdown Background Color - This color is used as the background for dropdown boxes that appear when hovering over primary navigation items. */
+  --nav-dropdown-background-color: #ffffff;
+
+  /* Nav Dropdown Color - This color is used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-color: #212529;
+
+  /* Nav Dropdown Hover Color - Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #feb900;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: #000000;
+  --heading-color: var(--contrast-color);
+  --default-color: var(--contrast-color);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.page-title:before {
+  content: "";
+  background-color: color-mix(in srgb, var(--background-color), transparent 40%);
+  position: absolute;
+  inset: 0;
+}
+
+.page-title h1 {
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 92px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 76px;
+  }
+}
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  display: inline-block;
+}
+
+.section-title h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  --background-color: #000000;
+  --heading-color: var(--contrast-color);
+  --default-color: var(--contrast-color);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background: url("assets/img/footer-bg.jpg") top center no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  position: absolute;
+  inset: 0;
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+}
+
+.footer .footer-about .logo {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.footer .footer-about .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.footer .footer-about .logo span {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer .footer-about p {
+  font-size: 14px;
+  font-family: var(--heading-font);
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 8px;
+  font-size: 13px;
+}

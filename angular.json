@@ -23,6 +23,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
               "src/styles.css"
             ],
             "scripts": []
